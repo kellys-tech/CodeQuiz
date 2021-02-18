@@ -2,6 +2,8 @@
 //set variables for start quiz button
 // var start = document.querySelector("#button");
 
+
+
 var position = 0;
 var correct = 0;
 var test = ""
@@ -17,6 +19,11 @@ var ansOptions1 = document.getElementById("userinput1")
 var ansOptions2 = document.getElementById("userinput2")
 var ansOptions3 = document.getElementById("userinput3")
 var ansOptions4 = document.getElementById("userinput4")
+
+function startQuiz() {
+    //begin quiz and hide start screen
+    var startScreenEl = document.getElementById("start-screen");
+    startScreenEl.setAttribute("class", "hide");
 
 
 //set variables for questions, options and answers
@@ -165,23 +172,3 @@ console.log("oh..okay")
     //if they are the same keep on going
     //else wrong tell them.. and decrement time
 //}
-
-
-//BEGIN EXTRAS HERE
-//ACCEPTANCE CRITERIA
-//GIVEN I am taking a code quiz
-//WHEN I click the start button (in HTML file)
-///THEN a timer starts and I am presented with a question
-
-//WHEN I answer a question
-//THEN I am presented with another question
-//WHEN I answer a question incorrectly
-//THEN time is subtracted from the clock
-//WHEN all questions are answered or the timer reaches 0
-//THEN the game is over
-//WHEN the game is over
-//THEN I can save my initials and score
-
-//OPTIONAL RESTART
-//function restart(){
-    //reappend container contents
